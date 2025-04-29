@@ -89,3 +89,38 @@ for (let i = 1; i <= n; i++) {
 }
 
 console.log("Ko‘paytma: " + s);
+
+//Har bir mahsulotning narxini 10% ga oshirib yangi massiv yaratish.
+let mahsulotlar = [
+  { nomi: "Telefon", narx: 500 },
+  { nomi: "Noutbuk", narx: 1200 },
+  { nomi: "Kofe mashinasi", narx: 150 },
+];
+
+let narxlar = mahsulotlar.map((mahsulot) => mahsulot.narx * 1.1);
+
+console.log(narxlar);
+
+
+// ----------------
+let sonlar = [5, 10, 15, 20];
+
+let natija = sonlar.map(son => {
+  return {
+    son: son,
+    kvadrat: son * son
+  };
+});
+
+console.log(natija);
+//-------------------------------
+let ismlar = ["ali", "vali", "hasan", "olim"];
+
+let natija2 = ismlar.map(ism => {
+  return {
+    ism: ism,
+    uzunlik: ism.length
+  };
+});
+
+console.log(natija2);
